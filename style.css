@@ -1,9 +1,16 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style-type: none;
+}
+
 img {
     /* outline: 2px solid saddlebrown; */
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 50px;
+    margin-top: 80px;
     width: 300px;
 }
 
@@ -29,13 +36,88 @@ input[type=text] {
     background-image: url('searchicon.png');
     background-size: 20px;
     background-repeat: no-repeat;
-    background-position: 20px 10px;
-    /* transition: width 1s ease-in-out; */
+    background-position: 15px 10px;
+    padding-left: 40px;
 }
 input[type=text]:focus {
     border: 3px solid #cabfbf;
     outline: none;
 }
 input::placeholder {
-    padding-left: 20px;
+    padding-left: 0px;
+}
+
+nav {
+    position: absolute;
+    top: 20px;
+    right: 25px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* li {
+    display: block;
+    float: right;
+    padding-right: 15px
+} */
+ul li {
+    display: inline;
+    padding-right: 10px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #615d5d;
+}
+
+.footer h4 {
+    position: absolute;
+    bottom: 80px;
+    background: rgb(210 203 203);
+    width: 100vw;
+    padding: 15px 40px;
+    font-size: 0.9rem;
+}
+.container {
+    /* outline: 2px solid black; */
+    font-size: 0.9rem;
+    display: flex;
+    flex-direction: row;
+    /* align-items: center; */
+    justify-content: space-between;
+    position: absolute;
+    bottom: 0px;
+    background: rgb(210 203 203);
+    height: 80px;
+    width: 100vw;
+    border-top: 2px solid rgb(179, 162, 162);
+}
+
+.container div {
+    margin: 0px 40px;
+}
+
+.footer-right {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:left;
+}
+.footer-right li a {
+    padding-right: 10px;
+    color: #615d5d;
+}
+.footer-left {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: right;
+}
+.footer-left li a {
+    padding-right: 10px;
+    color: #615d5d;
 }
